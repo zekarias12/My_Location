@@ -19,7 +19,7 @@
         android:layout_marginEnd="130dp"
         android:gravity="center"
         android:text="GeoLocation Lab class"
-        android:textColor="@color/black"
+        android:textColor="#EA0250"
         android:textSize="20sp"
         android:textStyle="bold" />
 
@@ -31,7 +31,7 @@
         android:layout_marginLeft="20sp"
         android:layout_marginTop="88dp"
         android:text="lattitude"
-        android:textColor="@color/black"
+        android:textColor="#037308"
         android:textSize="20sp"
         android:textStyle="bold" />
 
@@ -55,7 +55,7 @@
         android:layout_marginLeft="20sp"
         android:layout_marginTop="58dp"
         android:text="longtiude"
-        android:textColor="@color/black"
+        android:textColor="#057E0A"
         android:textSize="20sp"
         android:textStyle="bold" />
 

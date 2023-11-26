@@ -1,10 +1,10 @@
+
 package com.example.chaperthreelabgeolocation;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
-
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.pm.PackageManager;
@@ -18,9 +18,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.google.android.gms.maps.model.LatLng;
-
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
@@ -28,8 +26,8 @@ import java.util.Map;
 
 public class MainActivity extends AppCompatActivity implements LocationListener {
     public final static int LOCATION_CODE = 1;
-    public final static Double[] LATITUDES = {7.0466257, 7.0463459, 7.0461445};
-    public final static Double[] LONGITUDES = {38.5001405, 38.4999746, 38.5003551};
+    public final static Double[] LATITUDES = {7.04654511043743,7.047466914961488, 7.048803218950536};
+    public final static Double[] LONGITUDES = {38.50031577567177, 38.50053083824869,38.50460767668478};
     TextView textView_lat, textView_lon, textView_address;
     Button button_getLocation;
     LocationManager locationManager;
@@ -76,10 +74,9 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
 
         // Define the specific places and their corresponding coordinates
         Map<String, LatLng> places = new HashMap<>();
-        places.put("INFORMATICS LAB", new LatLng(7.0466257, 38.5001405));
-        places.put("CLASS ROOM", new LatLng(7.0463459, 38.4999746));
-        places.put("BIOMEDICAL LAB", new LatLng(7.0461445, 38.5003551));
-
+        places.put("INFORMATICS LAB", new LatLng(7.04654511043743, 38.50031577567177));
+        places.put("HAWASSA UNIVERSITY LIBRARY", new LatLng(7.047466914961488,38.50053083824869));
+        places.put("IOT STUDENT DORMITORY", new LatLng( 7.048803218950536, 38.50460767668478));
         for (Map.Entry<String, LatLng> entry : places.entrySet()) {
             String placeName = entry.getKey();
             LatLng placeLatLng = entry.getValue();
@@ -129,16 +126,31 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
     public void onProviderDisabled(@NonNull String provider) {
         // Implementation for onProviderDisabled method
     }
-      /*           GROUP MEMBERS
-             NAME                             ID
-      1. Yishak Tumoro                     0233/13
-      2. Okash Mustafa                     0192/13
-      3. Mohammed Muhidian                 0511/09
-      4. Ephrem Niguse                     0084/13
-      5. Ermiyas Bekele                    0253/13
-      6. Kore Melaku                       0142/13
-       */
-
+     
 
 
 }
+
+ /*   Teacher check these codes
+ # NFORMATICS LAB
+ # HAWASSA UNIVERSITY LIBRARY
+ # IOT STUDENT DORMITORY
+ */
+
+/*
+                    DEVELOPERS(MEMBERS)
+             NAME                             ID
+      1. FASIL MELKAMU......................0092/13
+
+      2. TEWODROS TKUYE.....................2427/13
+
+      3. ELIYAS YITAYIH.....................0920/09
+
+      4. ZEKARIAS ASCHALEW..................2834/13
+
+      5. ALIAS BIRHANU......................0284/13
+
+      6. FIKRADIS GELETAW...................0094/13
+
+
+ */
