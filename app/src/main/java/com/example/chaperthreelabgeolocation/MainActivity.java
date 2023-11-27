@@ -129,4 +129,16 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
     public void onProviderDisabled(@NonNull String provider) {
         // Implementation for onProviderDisabled method
     }
+      /*           GROUP MEMBERS
+             NAME                             ID
+      1. Yishak Tumoro                     0233/13
+      2. Okash Mustafa                     0192/13
+      3. Mohammed Muhidian                 0511/09
+      4. Ephrem Niguse                     0084/13
+      5. Ermiyas Bekele                    0253/13
+      6. Kore Melaku                       0142/13
+       */
+
+
+
 }
